@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Century;
+        }
+        header{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic1.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            min-height: 17px;
+        }
+        ul{
+            float: right;
+            list-style-type: none;
+            margin-top: 30px;
+            min-height: 400px;
+            margin-right: 40px;
+            font-size: 16px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            color:#fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5 ease;
+        }
+        ul li a:hover{
+            background-color:#fff;
+            color: #000;
+        }
+        ul li.activate a{
+            background-color:#fff ;
+            color: #000;
+        }
+        .main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .title{
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+        }
+        .button{
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .btn{
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            color:#fff;
+            transition: 0.5 ease;
+            font-size: 18px;
+        }
+        .btn:hover{
+            background: #fff;
+            color:black;
+        }
+        .sub-menu{
+            display: none;
+            top: 6%;
+            position: relative;
+        }
+        .sub-menu ul{
+            position: absolute;
+        }
+        .main ul:hover .sub-menu{
+            display: block;
+            position: absolute;background-color: rgb(0, 45, 117);
+            margin-top: 12px;
+            margin-left: 8px;
+
+        }
+        .main ul:hover .sub-menu ul{
+            display: block;
+            margin: 8px;
+
+        }
+        .main ul:hover .sub-menu ul li{
+            width: 75px;
+            padding-left: 5px;
+            border-bottom: 1px #fff;
+            background: transparent;
+            text-align: left;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <dir class="logo">
+                <img src="AG00154_.GIF"
+            </dir>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Departments</a>
+                <div class="sub-menu">
+                    <ul>
+                <li><a href="#">Websites</a>
+                    <li><a href="#">Python</a>>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>PROGRAMMING </h1>
+
+        </div>
+        <div class="button">
+           <a herf="#" class="btn">WATCH VIDEOS</a>
+           <a herf="#" class="btn">BASIC SKILLS</a>
+           <a herf="#" class="btn">LEARN MORE</a>
+        </div>
+    </header>
+</body>
+</html>
